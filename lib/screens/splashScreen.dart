@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:wisata_mobile/screens/landingPage.dart';
 
 class Splashscreen extends StatefulWidget {
   const Splashscreen({super.key});
@@ -12,7 +13,11 @@ class _SplashscreenState extends State<Splashscreen> {
 
   void initState(){
     super.initState();
-    Future.delayed(const Duration(seconds: 5));
+    Future.delayed(const Duration(seconds: 5),(){
+      Navigator.pushReplacement(context,
+      MaterialPageRoute(builder: (context) => const landingPage())
+      );
+    });
   }
   @override
   Widget build(BuildContext context) {
