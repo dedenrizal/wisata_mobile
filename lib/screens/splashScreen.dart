@@ -12,6 +12,7 @@ class _SplashscreenState extends State<Splashscreen> {
 
   void initState(){
     super.initState();
+    Future.delayed(const Duration(seconds: 5));
   }
   @override
   Widget build(BuildContext context) {
