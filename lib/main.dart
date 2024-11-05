@@ -1,8 +1,19 @@
+
 import 'package:flutter/material.dart';
-import 'package:wisata_mobile/mystatefullwidget.dart';
-import 'package:wisata_mobile/mystatelesswidget.dart';
+import 'package:wisata_mobile/screens/splashScreen.dart';
 
 void main() {
-  runApp(Mystatefullwidget());
+  runApp(TravelApp());
 }
 
+class TravelApp extends StatelessWidget {
+  const TravelApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner : false,
+      home :Splashscreen(),
+    );
+  }
+}
