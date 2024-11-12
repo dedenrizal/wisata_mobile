@@ -51,6 +51,17 @@ class _Pertemuan6State extends State<Pertemuan6> {
                       });
                     },
                   ),
+                  Text('laki-laki'),
+                  Radio(
+                    value: 'laki-laki',
+                    groupValue: selectedRadio,
+                    onChanged: (value) {
+                      setState(() {
+                        selectedRadio = value.toString();
+                      });
+                    },
+                  ),
+                  Text('perempuan')
                 ],
               ),
             ],
