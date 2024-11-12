@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:wisata_mobile/materimodulsscreens/pertemuan_6.dart';
 import 'package:wisata_mobile/screens/splashScreen.dart';
 
 void main() {
@@ -12,8 +12,8 @@ class TravelApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner : false,
-      home :Splashscreen(),
+      debugShowCheckedModeBanner: false,
+      home: Pertemuan6(),
     );
   }
 }
