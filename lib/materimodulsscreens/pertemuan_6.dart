@@ -27,6 +27,29 @@ class _Pertemuan6State extends State<Pertemuan6> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Row(
+                children: [
+                  Image.asset(
+                    'images/mewingcat.jpg',
+                    height: 100,
+                    width: 100,
+                  ),
+                  SizedBox(width: 30),
+                  Image.asset(
+                    'images/sigmacatt.jpg',
+                    height: 100,
+                    width: 100,
+                  ),
+                  SizedBox(width: 30),
+                  Image.asset(
+                    'images/sigmacat.jfif',
+                    height: 100,
+                    width: 100,
+                  ),
+                  SizedBox(width: 30),
+                ],
+              ),
+              SizedBox(height: 20),
               TextField(
                 controller: textEditingController,
                 decoration: InputDecoration(
@@ -74,6 +97,28 @@ class _Pertemuan6State extends State<Pertemuan6> {
                       olahraga = value!;
                     });
                   }),
+              CheckboxListTile(
+                  title: Text('seni'),
+                  value: seni,
+                  onChanged: (value) {
+                    setState(() {
+                      seni = value!;
+                    });
+                  }),
+              SizedBox(height: 20),
+              SwitchListTile(
+                title: Text('lulus'),
+                value: switchValue,
+                onChanged: (value) {
+                  setState(() {
+                    switchValue = value;
+                  });
+                },
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text('submit'),
+              ),
             ],
           ),
         ));
