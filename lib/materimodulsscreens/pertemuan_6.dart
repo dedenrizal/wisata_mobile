@@ -43,7 +43,7 @@ class _Pertemuan6State extends State<Pertemuan6> {
                 children: [
                   Text("jenis kelamin"),
                   Radio(
-                    value: 'laki-laki',
+                    value: 'perempuan',
                     groupValue: selectedRadio,
                     onChanged: (value) {
                       setState(() {
@@ -51,7 +51,7 @@ class _Pertemuan6State extends State<Pertemuan6> {
                       });
                     },
                   ),
-                  Text('laki-laki'),
+                  Text('perempuan'),
                   Radio(
                     value: 'laki-laki',
                     groupValue: selectedRadio,
@@ -61,9 +61,19 @@ class _Pertemuan6State extends State<Pertemuan6> {
                       });
                     },
                   ),
-                  Text('perempuan')
+                  Text('laki-laki')
                 ],
               ),
+              SizedBox(height: 20),
+              Text('hobi:'),
+              CheckboxListTile(
+                  title: Text('olahraga'),
+                  value: olahraga,
+                  onChanged: (value) {
+                    setState(() {
+                      olahraga = value!;
+                    });
+                  }),
             ],
           ),
         ));
